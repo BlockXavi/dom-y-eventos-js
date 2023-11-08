@@ -6,10 +6,39 @@
     <title>Ejercicio 14: Detener la Propagación de Evento</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    
+    <div id="elementoPadre">
+      <div id="elementoHijo">Haz clic aquí</div>
+    </div>
+
+    <style>
+      
+      div {
+        background-color: brown;
+        margin: 10px;
+      }
+      
+       div #elementoHijo {
+        background-color: aqua;
+      }
+    
+    </style>
 
     <script>
-      // Escribe tu codigo javascript aqui
+      
+      // Ejercicio 14: Detener la Propagación de Evento
+      // Utiliza stopPropagation para evitar que un evento se propague a elementos padre. Aprenderás cómo evitar que los eventos se propaguen en el árbol DOM.
+      const elementoHijo = document.getElementById('elementoHijo')
+        elementoHijo.addEventListener('click', (evento) => {
+          evento.stopPropagation()
+          alert('Evento hijo')
+        })
+      
+      const elementoPadre = document.getElementById('elementoPadre')
+        elementoPadre.addEventListener('click', (evento) => {
+          alert('Evento padre')
+        })  
+    
     </script>
   </body>
 </html>

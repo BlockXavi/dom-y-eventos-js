@@ -6,10 +6,18 @@
     <title>Ejercicio 12: Asociar Evento de Clic</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    
+    <button id="miBoton">Haz click</button>
 
     <script>
-      // Escribe tu codigo javascript aqui
-    </script>
+      
+      // Ejercicio 12: Asociar Evento de Clic
+      // Asocia un evento de clic a un botón y muestra un mensaje cuando se hace clic en el botón. Aprenderás cómo responder a eventos de usuario.
+      const boton = document.getElementById('miBoton')
+        boton.addEventListener('click', () => {
+          alert('¡Hiciste clic en el botón')
+        })
+    
+      </script>
   </body>
 </html>
