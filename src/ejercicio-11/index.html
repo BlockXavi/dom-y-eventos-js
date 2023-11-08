@@ -6,10 +6,19 @@
     <title>Ejercicio 11: Eliminar Elemento con `removeChild`</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    
+    <div id="contenedor">
+      <div id="elementoAEliminar">Elemento a eliminar</div>
+    </div>
 
     <script>
-      // Escribe tu codigo javascript aqui
+      
+      // Ejercicio 11: Eliminar Elemento con removeChild
+      // Utiliza removeChild para eliminar un elemento hijo de su elemento padre en el DOM. Aprenderás a quitar elementos del árbol DOM.
+      const elementoAEliminar = document.getElementById('elementoAEliminar')
+      const padre = elementoAEliminar.parentElement // Definimos el 'padre' a partir del elementoAEliminar
+        padre.removeChild(elementoAEliminar) // Desde el 'padre' elimino al hijo
+    
     </script>
   </body>
 </html>
