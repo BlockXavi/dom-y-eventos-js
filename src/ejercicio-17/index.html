@@ -6,10 +6,18 @@
     <title>Ejercicio 17: Manejo de Evento de Carga de Imagen</title>
   </head>
   <body>
-    <!-- Escribe tu codigo html aqui -->
+    
+    <img id="miImagen" src="imagen.jpg" alt="Imagen" />
 
     <script>
-      // Escribe tu codigo javascript aqui
+      
+      // Ejercicio 17: Manejo de Evento de Carga de Imagen
+      // Maneja el evento de carga de una imagen y muestra un mensaje cuando la imagen se carga.
+      const imagen = document.getElementById('miImagen')
+        imagen.addEventListener('load', () => {
+          alert('La imagen se ha cargado correctamente')
+        })
+    
     </script>
   </body>
 </html>
